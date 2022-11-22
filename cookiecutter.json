@@ -1,0 +1,9 @@
+{
+    "project_name": "linode-tf-lke",
+    "tf_cloud_org": "my-tf-cloud-org",
+    "k8s_name": "my-k8s-name",
+    "domain_name": "mydomain.com",
+    "github_username": "my_github_username",
+    "github_pages_alias": "my-github-pages.github.io"
+
+}
