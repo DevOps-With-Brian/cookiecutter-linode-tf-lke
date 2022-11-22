@@ -1,7 +1,7 @@
 # Linode Terraform LKE Cookiecutter
 This sets up a repo used to build out a Terraform setup for Linode lke, dns, and cert manager for SSL endpoints.  This also includes versioning using Commitizen and Conventional Commits.
 
-Ensure you have 
+Ensure you have [Cookie Cutter](https://cookiecutter.readthedocs.io/en/stable/) installed.
 
 After you have cookicutter installed you can run `cookiecutter https://github.com/devops-with-brian/cookiecutter-linode-tf-lke` to generate the folder with all the code.
 
