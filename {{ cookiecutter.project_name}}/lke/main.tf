@@ -27,11 +27,6 @@ provider "helm" {
   }
 }
 
-provider "kubernetes" {
-  config_path = "kube-config"
-  
-}
-
 resource "linode_lke_cluster" "linode_lke" {
     label       = var.label
     k8s_version = var.k8s_version
