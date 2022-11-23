@@ -78,16 +78,23 @@ Ensuring we still have our ``TF_VAR_token`` exported on our shell then we can ru
 
 Connecting To New Kubernetes Cluster
 ------------------------------------
-After running the terraform apply command to deploy the cluster we should now have a ``kube-config`` file in our directory, so from this dir we can now run ``kubectl`` commands to interact with the cluster, export this as seen below.
+After deploy we now need to generate our kubernetes config and tell kubectl to use it for connecting::
 
-Add this to the ``$KUBECONFIG`` env var::
 
-   export KUBECONFIG=$(pwd)/kube-config
+    export KUBE_VAR=`terraform output kubeconfig` && echo $KUBE_VAR | base64 -di > lke-cluster-config.yaml
 
-If for some reason you ever delete your kube-config or lose it, you can regenerate it via::
 
-    export KUBE_VAR=`terraform output kubeconfig` && echo $KUBE_VAR | base64 -di > kube-config
-    export KUBECONFIG=$(pwd)/kube-config
+
+Then we can run the following to tell kubectl to use it::
+
+
+    export KUBECONFIG=$(pwd)/lke-cluster-config.yaml
+
+
+If for some reason you ever delete your lke-cluster-config.yaml or lose it, you can regenerate it via::
+
+    export KUBE_VAR=`terraform output kubeconfig` && echo $KUBE_VAR | base64 -di > lke-cluster-config.yaml
+    export KUBECONFIG=$(pwd)/lke-cluster-config.yaml
 
 This will recreate it and set the path of ``KUBECONFIG`` to it to be used.
 
