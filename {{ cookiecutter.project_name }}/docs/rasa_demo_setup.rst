@@ -41,3 +41,16 @@ And you should see these::
     rasa-postgresql-0                                   0/1     ContainerCreating   0          35s
 
 Once these show running you should be able to hit the resource at the https://subdomain.yourdomain.com/status route.
+
+You can also add this to your existing github pages ``index.html`` file by adding this in::
+
+    <div
+    id="rasa-chat-widget"
+    data-avatar-background="rgba(255, 255, 255, 0)"
+    data-avatar-url="https://avatars.githubusercontent.com/u/115162917?s=200&v=4"
+    data-root-element-id="storybook-preview-wrapper"
+    data-websocket-url="https://rasa.{{cookiecutter.domain_name}}/"
+    id="rasa-chat-widget"
+></div>
+
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
