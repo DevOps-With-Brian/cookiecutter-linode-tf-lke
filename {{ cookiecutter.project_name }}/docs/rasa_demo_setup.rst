@@ -53,4 +53,4 @@ You can also add this to your existing github pages ``index.html`` file by addin
         id="rasa-chat-widget"
     ></div>
 
-<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
