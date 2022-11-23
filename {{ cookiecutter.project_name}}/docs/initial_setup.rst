@@ -47,3 +47,9 @@ You will also want to sign up for a `Linode <https://linode.com/>`_ account if y
 This setup if used completely will setup as previously stated above the LKE, Node_Balancer, and Domain setup in Linode.
 
 For more information on Terraform on Linode for LKE please see `Deploy LKE Cluster Using Terraform <https://www.linode.com/docs/guides/how-to-deploy-an-lke-cluster-using-terraform/>`_ 
+
+GitHub Pages
+------------
+If you want to use the `GitHub Pages <https://pages.github.com/>`_ you will want to setup a repo for that, I recommend using `Minimal Mistakes Starter <https://github.com/mmistakes/mm-github-pages-starter/generate>`_ clicking that link will create a new repo based off their template.
+
+Just follow the instructions for setting up the GitHub pages on the previously mentioned link.
