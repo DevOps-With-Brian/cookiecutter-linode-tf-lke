@@ -25,7 +25,7 @@ Finally you go to the `cert-manager` folder to setup the cert manager for Let's 
 The `rasa` dir is an example helm setup with a values file for deploying our Rasa chatbot onto the cluster and being able to talk to it over SSL.
 
 # Docs
-Docs are setup with [Sphinx ReadtheDocs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html) and pushed to https://linode-terraform-kubernetes.readthedocs.io/en/latest/.
+Docs are setup with [Sphinx ReadtheDocs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html) and pushed to https://cookiecutter-linode-tf-lke.readthedocs.io/.
 
 In order to build docs locally setup a new python virtualenv and install the requirements:
 
@@ -37,7 +37,7 @@ pip install -r docs/requirements.txt
 
 Then you can run `make html` from the `docs` dir to build the docs which will then be located in the `docs/_build` dir.
 
-Latest version of docs can be found [Here](https://linode-terraform-kubernetes.readthedocs.io/en/latest/)
+Latest version of docs can be found [Here](https://cookiecutter-linode-tf-lke.readthedocs.io/)
 
 # Github Pages
 If you want to use the same Github pages custom domain with your setup like this repo does, check out [GitHub Pages Docs](https://pages.github.com/) on setting up your repo.
