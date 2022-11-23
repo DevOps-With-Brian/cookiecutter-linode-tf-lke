@@ -18,8 +18,8 @@ ingress:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
   }
   path: "/"
-  hostname: rasa.devopswithbrian.com
+  hostname: rasa.{{cookiecutter.domain_name}}
   tls:
     - secretName: rasa-tls
       hosts:
-        - rasa.devopswithbrian.com
+        - rasa.{{cookiecutter.domain_name}}
