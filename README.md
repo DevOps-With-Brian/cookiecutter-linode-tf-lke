@@ -10,7 +10,7 @@ In the `cookiecutter.json` there are vars you will need to answer the questions 
 ```
 "project_name": "linode-tf-lke" - This should be your project name or repo name in github.  This will also be the folder name created for the code.
 
-"tf_cloud_org": "my-tf-cloud-org", - This is your Terraform cloud username used for remote state
+"tf_cloud_org": "my-tf-cloud-org", - This is your Terraform cloud organization name used for remote state
 
 "k8s_name": "my-k8s-name", - What you want to name/label the lke cluster in Linode
 
