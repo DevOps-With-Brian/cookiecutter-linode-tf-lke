@@ -19,3 +19,5 @@ In the `cookiecutter.json` there are vars you will need to answer the questions 
 "github_pages_alias": "my-github-pages.github.io" - This will be your github pages location for your github pages.
 ```
 
+Follow the [Docs](https://cookiecutter-linode-tf-lke.readthedocs.io/) on how to use this to set everything up, there are also the same local docs in your `docs` dir and directions in the main README that gets generated on how to generate them locally.
+
