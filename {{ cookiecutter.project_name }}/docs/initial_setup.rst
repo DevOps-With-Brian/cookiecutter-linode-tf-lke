@@ -53,3 +53,7 @@ GitHub Pages
 If you want to use the `GitHub Pages <https://pages.github.com/>`_ you will want to setup a repo for that, I recommend using `Minimal Mistakes Starter <https://github.com/mmistakes/mm-github-pages-starter/generate>`_ clicking that link will create a new repo based off their template.
 
 Just follow the instructions for setting up the GitHub pages on the previously mentioned link.
+
+Kubectl Install
+---------------
+You will also want to have Kubectl Installed, they have installers for `Linux <https://kubernetes.io/docs/tasks/tools/install-kubectl-linux>`_, `Windows <https://kubernetes.io/docs/tasks/tools/install-kubectl-windows>`_, and `macOS <https://kubernetes.io/docs/tasks/tools/install-kubectl-macos>`_

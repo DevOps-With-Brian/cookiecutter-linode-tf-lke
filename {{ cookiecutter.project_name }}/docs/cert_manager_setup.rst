@@ -10,9 +10,16 @@ Ensure you are in the ``cert-manager`` directory for all of these steps.
 .. note::
     Be sure before starting any of the below steps you already have your dns nameservers from your custom domain pointing to the linode servers and resolving, this should have been done in the previous dns terraform steps.
 
+Install Helm
+------------
+Now that our cluster is setup, we need to install helm before we can run the below commands to setup the cluster.
+
+Helm is a package manager for Kubernetes, please check out `Install Instructions For Helm <https://helm.sh/docs/intro/install/>`_ on how to install it.
+
+
 Install Cert Manager CRDs
 -------------------------
-Ensure you have your `kube-config` file from the previous kubernetes step exported or you can copy to this folder if needed, and then you will want to run the following to install the cert manager CRDs::
+Ensure you have your `lke-cluster-config.yaml` file from the previous kubernetes section exported, and then you will want to run the following to install the cert manager CRDs::
 
     kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.8.0/cert-manager.crds.yaml
 
@@ -75,6 +82,7 @@ You should see something like::
 .. note::
     Before continuing to the next steps ensure these cert-manager pods are running and ready.
 
+
 Setting Up ClusterIssuer Resource
 ---------------------------------
 Next we will be creating a cluster issuer resource that will be in charge of helping with the automated ssl certs.
@@ -91,3 +99,7 @@ Once you know what this email should be run the following::
 This will update the email section of that file for you automatically and apply it.
 
 We should now have everything we need setup in order to deploy our test application.  In this setup we are using a rasa chatbot atm for a demo example.  Please proceed to the next Rasa Demo Setup section to see how this works.
+
+
+.. note::
+    Before starting the next part, I like to wait about 10-15 mins for everything DNS wise to setup and replicate so you don't run into issues.
