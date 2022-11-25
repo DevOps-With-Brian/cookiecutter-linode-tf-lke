@@ -19,6 +19,12 @@ The scopes you need to give it access to are:
 
 This API token will become the ``TF_VAR_token`` mentioned in the next section.
 
+Terraform Cloud Token
+---------------------
+Don't forget this repo uses remote state located in Terraform Cloud, more information can be found at https://www.hashicorp.com/products/terraform/pricing.
+Currently using the Free tier and setup an account for free.  After setting up a free account you will want to generate an API token as discussed in https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-login before we can continue.
+
+
 Terraform Variables
 -------------------
 The first thing we need to do is setup some Terraform variables that we are going to be using.
