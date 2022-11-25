@@ -27,6 +27,7 @@ This also sets up cert-manager in kubernetes and allows for auto cert generation
    dns_domain_setup
    cert_manager_setup
    rasa_demo_setup
+   destroying_resources
 
 .. toctree::
    :maxdepth: 1
