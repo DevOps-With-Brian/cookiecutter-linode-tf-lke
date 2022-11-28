@@ -35,8 +35,3 @@ This also sets up cert-manager in kubernetes and allows for auto cert generation
    :hidden:
 
    changelog
-
-Indices and tables
-==================
-
-* :ref:`genindex`
