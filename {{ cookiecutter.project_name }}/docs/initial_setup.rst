@@ -1,7 +1,7 @@
 **************
 Initial Setup
 **************
-This documentation section goes over the initial setup of everything required to setup a `Linode <https://linode.com/>`_ LKE cluster as code via `Terraform <https://www.terraform.io/>`_.  This currently sets up the following after complete::
+This documentation section goes over the initial setup of everything required to setup a `Linode <https://www.linode.com/lp/refer/?r=24202434814cd6f94325c26c8a78803a931bed0f>`_ LKE cluster as code via `Terraform <https://www.terraform.io/>`_.  This currently sets up the following after complete::
 
  Linode LKE - Kubernetes Cluster with 3 shared nodes
  Linode node_balancer - Using nginx ingress it will use this to allow for public resources if wanted from kubernetes.
@@ -42,7 +42,7 @@ Currently using the Free tier and setup an account for free.  After setting up a
 
 Linode Account
 --------------
-You will also want to sign up for a `Linode <https://linode.com/>`_ account if you don't already have one.
+You will also want to sign up for a `Linode <https://www.linode.com/lp/refer/?r=24202434814cd6f94325c26c8a78803a931bed0f>`_ account if you don't already have one.
 
 This setup if used completely will setup as previously stated above the LKE, Node_Balancer, and Domain setup in Linode.
 
